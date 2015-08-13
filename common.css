@@ -281,7 +281,7 @@ img {
 .header-panel__top-form__header-menu {
     margin-top: -28px;
     width: 100%;
-    max-width: 990px;
+    max-width: 986px;
     height: 154px;
     background-image: url(images/header/header_menu_back.png);
     border-radius: 4px;
@@ -291,6 +291,7 @@ img {
 
 .header-panel__top-form__header-menu__new-menu {
     margin-top: 2px;
+    margin-left: 9px;
     height: 23px;
     float: left;
     position: relative;
@@ -358,11 +359,12 @@ img {
     font-size: 13px;
     font-family: Tahoma;
     color: rgb(94, 94, 94);
-    width: 95%;
+    width: 92.65%;
     height: 20px;
     float: left;
-    padding: 2px 20px 2px 3px;
+    padding: 2px 0 2px 3px;
     margin: 0;
+    margin-left: 9px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -375,7 +377,7 @@ img {
     background: transparent;
     width: auto;
     margin: -1px 0 0 5px;
-    width: 30px;
+    width: 50px;
     padding: 0;
     /* height: 22px; */
     cursor: pointer;
@@ -663,9 +665,9 @@ img {
 
 .footer {
     position: absolute;
-    left: 345px;
+    left: 330px;
     bottom: -2px;
-    width: 64%;
+    width: 65.3%;
     height: 56px;
     background-image: url(images/footer/footer_back.png);
     border-radius: 11px;
@@ -1162,10 +1164,10 @@ img {
    .header-panel__top-form__header-menu {
       margin-top: -25px;
       width: 100%;
-      max-width: 741px;
+      max-width: 737px;
    }
    .header-panel__top-form__header-menu__find-holder input[type="text"] {
-      width: 93.3%;
+      width: 90.3%;
    }
    .footer {
       left: 14px;
@@ -1183,7 +1185,7 @@ img {
    .header-panel__top-form__header-menu {
       margin-top: -25px;
       width: 100%;
-      max-width: 980px;
+      max-width: 975px;
    }
    .footer {
       left: 15px;
