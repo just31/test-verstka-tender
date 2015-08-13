@@ -934,13 +934,13 @@ img {
       -webkit-text-size-adjust: none;
    }
    .header p {
-      font-size: 70%;
+      font-size: 68%;
    }
    .header-panel {
       height: auto;
    }
    .header__menu a {
-	font-size: 72%;
+	font-size: 70%;
    }
    #header-panel__logo img {
       float: left;
@@ -1148,7 +1148,7 @@ img {
     }
     .footer {
       left: 14px;
-      width: 96%;
+      width: 96.25%;
     }
 }
 
@@ -1164,4 +1164,29 @@ img {
     width: 100%;
     max-width: 741px;
    }
+   .footer {
+      left: 14px;
+      width: 97%;
+    }
+}
+
+@media screen and (min-width: 1266px) and (max-width:1280px) {
+   .footer {
+      left: 15px;
+      width: 97.5%;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width:1660px) {
+   .footer {
+      left: 53px;
+      width: 92.1%;
+    }
+}
+
+@media screen and (min-width: 1661px) and (max-width:1900px) {
+   .footer {
+      left: 209px;
+      width: 74.7%;
+    }
 }
