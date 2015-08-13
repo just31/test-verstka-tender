@@ -358,7 +358,7 @@ img {
     font-size: 13px;
     font-family: Tahoma;
     color: rgb(94, 94, 94);
-    width: 93.3%;
+    width: 95%;
     height: 20px;
     float: left;
     padding: 2px 20px 2px 3px;
@@ -546,7 +546,7 @@ img {
 
 .control-label {
     float: left;
-    margin-top: -5px;
+    margin-top: -5px !important;
     margin-left: 7px;
     margin-right: 128px;
     font-weight: normal;
@@ -578,7 +578,7 @@ img {
 }
 
 .control-label_phone {
-    margin-left: 15.5px;
+    margin-left: 16px;
     margin-right: 40px !important;
 }
 
@@ -685,7 +685,7 @@ img {
 }
 
 .footer__info {
-    margin-top: 7px;
+    margin-top: 8px;
     font-size: 10px;
     color: #A00006;
     line-height: 1.3;
@@ -703,7 +703,7 @@ img {
 
 .footer__security {
     float: right;
-    margin-top: -30px;
+    margin-top: -31px;
     margin-right: 116px;
 }
 
@@ -1160,9 +1160,12 @@ img {
       margin-left: 61px;
    }
    .header-panel__top-form__header-menu {
-    margin-top: -25px;
-    width: 100%;
-    max-width: 741px;
+      margin-top: -25px;
+      width: 100%;
+      max-width: 741px;
+   }
+   .header-panel__top-form__header-menu__find-holder input[type="text"] {
+      width: 93.3%;
    }
    .footer {
       left: 14px;
@@ -1171,6 +1174,17 @@ img {
 }
 
 @media screen and (min-width: 1266px) and (max-width:1280px) {
+   .header-panel__top-menu {
+      margin-left: -84px;
+   }
+   .header-panel__top-form {
+      margin-left: 198px;
+   }
+   .header-panel__top-form__header-menu {
+      margin-top: -25px;
+      width: 100%;
+      max-width: 980px;
+   }
    .footer {
       left: 15px;
       width: 97.5%;
