@@ -23,6 +23,12 @@ img {
 }
 
 .header {
+    position: relative;
+    /*
+    position: fixed;
+    top: 0px;
+    left: 0;
+    */
     width: 100%;
 	height: 35px;
 	line-height: 34px;
@@ -30,7 +36,6 @@ img {
 	border: 1px solid #FFF;
 	box-shadow: 0 0 5px 0 #ccc;
     margin: 4px 10px -3px 0;
-    position: relative;
 }
 
 .header p {
@@ -107,6 +112,12 @@ img {
 }
 
 .header-panel {
+    position: relative;
+    /*
+    position: fixed;
+    top: 35px !important;
+    left: 0;
+    */
     float: right;
     margin-top: 8px;
     padding-bottom: 10px;
@@ -132,46 +143,106 @@ img {
 .header-panel__top-menu {
     display: inline-block;
     margin-left: -90px;
-    width: 240px;
+    width: 270px;
 }
 
-.header-panel__navbar {
-    margin: 0;
+#header-panel__navbar {
+	padding: 0;
+    margin-top: 12.5px;
+    margin-left: 3.5px;
+	font-size: 100%;
+}
+
+#header-panel__navbar li {
+    margin-right: 22px;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+
+#header-panel__navbar li img {
+    margin-top: -1px;
+    margin-right: 9px;
+}
+
+#header-panel__navbar li ul {
+	list-style: none;
+    margin-left: -5px;
     padding: 0;
+	width: 50px;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 45px;
+    z-index: 101;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
-.header-panel__navbar li {
-    display: inline-block;
-    margin: 14px 14px 0px 3px;
+#header-panel__navbar li ul li {
+	float: left;
+    margin-top: -50px;
+    margin-left: -2px;
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-bottom: 7px;
+	width: 50px;
+    height: auto;
+	text-align: left;
+	border: 1px solid #7c7c7c;
+    border-radius: 4px;
+    background: url(images/langbg.png) 0 0 repeat-x #f3f3f3;
 }
 
-.header-panel__navbar a {
-    margin-left: 10px;
-    color: #D90D15;
+#header-panel__navbar li a {
+	height: auto;
+	color: #D90D15;
     text-decoration: underline;
     font-size: 12px;
+    -webkit-transition: text-decoration .4s ease;
 }
 
-.header-panel__navbar a:hover {
+#header-panel__navbar li a:hover {
     text-decoration: none;
 }
 
-.flag {
-    position: relative;
-    top: 1px;
-    width: 16px;
-    height: 11px;
-    display: inline-block;
-    overflow: hidden;
-    background: url(images/icons/flags_matrix.png) 0 0px no-repeat;
+#header-panel__navbar li:hover ul{
+	opacity: 1 !important;
 }
 
-* + html .flag {
-    top: 0;
+/*
+#header-panel__navbar li:hover:nth-child(1) {
+    display: none;
 }
+*/
+
+.flag {
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 11px;
+  display: inline-block;
+  overflow: hidden;
+  background: url(images/icons/flags_matrix.png) 0 0px no-repeat;
+}
+
+* + html .flag { top: 0; }
 
 .flag-ru  {
-    background-position: -288px -231px;
+  margin-right:7px;
+  background-position: -288px -231px;
+}
+
+.flag-en {
+  margin-right:7px;
+  background-position: -336px -121px;
+}
+
+.flag-ua {
+  margin-right:7px;
+  background-position: -336px -11px;
 }
 
 .header-panel__top-form {
@@ -708,6 +779,10 @@ img {
     margin-top: -31px;
     margin-right: 116px;
 }
+
+
+
+/* Адаптивный дизайн */
 
 @media screen and (min-width: 320px) and (max-width:479px) {
    html {
