@@ -55,10 +55,19 @@
                 <div class="col-sm-9">
                     <div class="col-sm-3">
                         <div class="header-panel__top-menu">
-                            <ul class="header-panel__navbar">
-                                <li><span class="flag flag-ru"></span><a href="javascript:void(0);" rel="nofollow">Ru</a></li>
+                            <ul id="header-panel__navbar">
+	                            <li>
+		                            <a href="javascript:void(0);" rel="nofollow"><span class="flag flag-ru"></span></a><a href="#" rel="nofollow">Ru</a>
+		                            <ul>
+			                            <li class="hidden-xs">
+                                            <a href="?lang=ru" rel="nofollow"><span class="flag flag-ru"></span></a><a href="?lang=ru" rel="nofollow">Ru</a> <br>
+                                            <a href="?lang=ua" rel="nofollow"><span class="flag flag-ua"></span></a><a href="?lang=ua" rel="nofollow">Ua</a> <br>
+                                            <a href="?lang=en" rel="nofollow"><span class="flag flag-en"></span></a><a href="?lang=en" rel="nofollow">En</a>
+                                        </li>
+		                            </ul>
+	                            </li>
                                 <li><img src="images/header/header_icon_home.gif" alt="Главная" title="Главная" height="11" width="12"><a href="javascript:void(0);" alt="Главная" title="Главная" rel="nofollow">Главная</a></li>
-                                <li><img src="images/header/header_icon_contacts.gif" alt="Контакты" title="Контакты" height="11" width="12"><a href="javascript:void(0);" alt="Контакты" title="Контакты" rel="nofollow">Контакты</a></li>
+                                <li><img src="images/header/header_icon_contacts.gif" alt="Контакты" title="Контакты" height="11" width="12"><a href="javascript:void(0);" alt="Контакты" title="Главная" rel="nofollow">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -272,10 +281,9 @@
 
                         </fieldset>
                         </form>
-
                     </div>
-                </div>
 
+                </div>
             </div>
           </div>
     </div> <!-- /container -->
@@ -294,6 +302,12 @@
     </div>
 
 
+    <div id="block_mini">
+    Скидка!
+    <div id="block_norm">
+        <span>Определенный текст</span>
+    </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
@@ -312,6 +326,19 @@
                   },
                   'show'
                 );
+                /*
+                var block_header = $( '.header' ),
+                block_header_panel = $('.header-panel');
+
+                block_header.on({
+                    'mouseenter': function(e) {
+                    block_header_panel.slideDown();
+                },
+                    'mouseleave': function(e) {
+                    block_header_panel.slideUp();
+                }
+                });
+                */
             });
         });
 	</script>
