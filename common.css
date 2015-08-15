@@ -1188,10 +1188,11 @@ img {
    }
    .input-mini_left {
       float: none;
-      margin-left: 192px;
+      margin-top: 1px;
+      margin-left: 56px;
     }
     .input-mini_left1 {
-      margin-top: 7px;
+      margin-top: 1px;
       margin-left: 56px;
     }
     .controls__cursor-pointer {
